@@ -127,6 +127,8 @@ color: #FFFFFF;
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  padding: 10px 32px;
+  display: inline-block;
 }
 .button:hover,
 .button:focus {
@@ -230,4 +232,34 @@ border-radius: 4px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+
+
+/* ........---------block elements------...... */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+.container {
+  width: 1200px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }

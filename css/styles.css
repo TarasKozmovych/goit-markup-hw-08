@@ -8,6 +8,7 @@ body {
 }
 .list {
   list-style: none;
+  padding-left: 0px;
 }
 
 :root {
@@ -16,6 +17,40 @@ body {
   --background-footer: #2F303A;
   --background-header: #FFFFFF;
 }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;}
+  
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid tomato;
+  }
+  
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .foto {
+    display: block;
+  }
 /* ---------header-------- */
 .header {
    background: var(--background-header);
@@ -27,6 +62,8 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+  margin-right: 93px;
+
 }
 .header-logo > span {
   color: #2196F3;
@@ -38,6 +75,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 .header-link:hover,
 .header-link:focus {
@@ -59,12 +99,42 @@ body {
   color: var(--accent-color-text)
 }
 
+.header > .container {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item {
+  margin-left: 50px;
+}
+.header-item:first-child {
+  margin-left: 0px;
+}
+
+.header-cont {
+  display: flex;
+  margin-left: auto;
+  padding-left: 0px;
+}
+
+.header-contact:first-child {
+  margin-right: 50px;
+}
+
 
 
 
 /* ...-----footer-----..... */
 .footer {
   background-color: var(--background-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
@@ -74,6 +144,8 @@ body {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #ffffff;
+    margin-bottom: 20px;
+    display: block;
 }
 .footer-logo>span {
   color: #2196F3;
@@ -99,7 +171,14 @@ color: #FFFFFF;
 .footer-info:focus {
   color: var(--accent-color-text);
 }
-
+.footer-contact:first-child {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+/* .foter-contact{
+  display: block;
+}
+ */
 
 /* .....------section-hero--------...... */
 .section-hero {
@@ -114,6 +193,9 @@ color: #FFFFFF;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .button {
   font-family: inherit;
@@ -129,6 +211,7 @@ color: #FFFFFF;
   border: none;
   padding: 10px 32px;
   display: inline-block;
+  margin-top: 30px;
 }
 .button:hover,
 .button:focus {
@@ -154,12 +237,24 @@ color: #FFFFFF;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .about-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+.about-list {
+  display: flex;
+  
+}
+.about-item:nth-child(n + 2) {
+  margin-left: 30px;
+  
+}
+.about-item {
+  width: 270px;
 }
 
 /* .......------section-foto-------..... */
@@ -168,7 +263,16 @@ color: #FFFFFF;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px; 
 }
+.foto-list {
+  display: flex;
+}
+.foto-item:nth-child(n + 2) {
+  margin-left: 30px;
+}
+
 
 /* .......-------section-team--------...... */
 .section-team {
@@ -179,6 +283,9 @@ color: #FFFFFF;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+
 }
 .team-name {
   font-weight: 500;
@@ -186,6 +293,8 @@ color: #FFFFFF;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .team-profession {
   font-size: 16px;
@@ -194,6 +303,22 @@ color: #FFFFFF;
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.team-list {
+  display: flex;
+}
+.team-item:nth-child(n + 2) {
+  margin-left: 30px;}
+
+  .team-item {
+    height: 368px;
+    background: #FFFFFF;
+    /* material shadow v1 */
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
 
 /* ........-------------portfolio----------.......... */
 .btn {
@@ -232,34 +357,4 @@ border-radius: 4px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--text-color);
-}
-
-
-/* ........---------block elements------...... */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-
-.container {
-  width: 1200px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }

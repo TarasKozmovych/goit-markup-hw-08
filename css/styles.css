@@ -54,6 +54,7 @@ body {
 /* ---------header-------- */
 .header {
    background: var(--background-header);
+  border-bottom: 1px solid #ECECEC;
 }
 .header-logo {
    font-family: 'Raleway', sans-serif;
@@ -135,6 +136,8 @@ body {
   background-color: var(--background-footer);
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .footer-logo {
@@ -175,10 +178,7 @@ color: #FFFFFF;
   margin-top: 9px;
   margin-bottom: 9px;
 }
-/* .foter-contact{
-  display: block;
-}
- */
+
 
 /* .....------section-hero--------...... */
 .section-hero {
@@ -247,6 +247,7 @@ color: #FFFFFF;
 }
 .about-list {
   display: flex;
+      justify-content: center;
   
 }
 .about-item:nth-child(n + 2) {
@@ -268,6 +269,7 @@ color: #FFFFFF;
 }
 .foto-list {
   display: flex;
+      justify-content: center;
 }
 .foto-item:nth-child(n + 2) {
   margin-left: 30px;
@@ -302,18 +304,17 @@ color: #FFFFFF;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 30px;
 }
 .team-list {
   display: flex;
+      justify-content: center;
 }
 .team-item:nth-child(n + 2) {
   margin-left: 30px;}
 
   .team-item {
-    height: 368px;
     background: #FFFFFF;
-    /* material shadow v1 */
-    
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);

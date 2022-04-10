@@ -334,13 +334,11 @@ margin-bottom: 9px;
 
 /* ........-------------portfolio----------.......... */
 
-.section-filter {
-  padding-top: 94px;
-}
 
 .filter-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filter-item:nth-child(n + 2) {
   margin-left: 8px;
@@ -370,10 +368,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 border-radius: 4px;
 }
 
-.section-work {
-  padding-top: 50px;
-  padding-bottom: 94px;
-}
+
 .work-title {
   font-weight: 700;
   font-size: 18px;
@@ -410,8 +405,9 @@ border-radius: 4px;
   margin-left: 0px;
 }
 .work-name {
- padding: 20px 24px;
+ padding: 20px 23px;
 background: #FFFFFF;
 border-bottom: 1px solid #EEEEEE;
-box-sizing: border-box;
+border-left: 1px solid #EEEEEE;
+border-right: 1px solid #EEEEEE;
 }

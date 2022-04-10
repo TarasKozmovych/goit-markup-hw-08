@@ -98,6 +98,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 .header-info:hover,
 .header-info:focus {
@@ -162,6 +165,7 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: #FFFFFF;
+margin-bottom: 9px;
 }
 
 .footer-info {
@@ -175,7 +179,6 @@ color: #FFFFFF;
   color: var(--accent-color-text);
 }
 .footer-contact:first-child {
-  margin-top: 9px;
   margin-bottom: 9px;
 }
 
@@ -184,6 +187,8 @@ color: #FFFFFF;
 .section-hero {
   text-align: center;
   background-color:#2F303A;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -299,7 +304,6 @@ color: #FFFFFF;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 .team-profession {
@@ -308,7 +312,10 @@ color: #FFFFFF;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin-bottom: 30px;
+}
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-list {
   display: flex;

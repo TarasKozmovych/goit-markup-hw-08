@@ -100,7 +100,8 @@ body {
   color: #757575;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
+  display: inline-flex;
+  align-items: center;
 }
 .header-info:hover,
 .header-info:focus {
@@ -132,8 +133,10 @@ body {
 .header-contact:first-child {
   margin-right: 50px;
 }
-
-
+ .header-tell {
+  fill: currentColor;
+  margin-right: 10px;
+ }
 
 
 /* ...-----footer-----..... */
@@ -182,8 +185,60 @@ margin-bottom: 9px;
   margin-bottom: 9px;
 }
 
+.icon-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.footer-icon-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icon-item+.footer-icon-item {
+  margin-left: 10px;
+}
+.footer-list-icon {
+  display: flex;
+}
+.footer-icon {
+  fill: currentColor;
+}
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+background-color: var(--accent-color-text);
+}
+.footer-icon-div {
+  margin-left: 70px;
+}
+.footer-div {
+  display: flex;
+  align-items: baseline;
+}
 
 /* .....------section-hero--------...... */
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:linear-gradient(to right,
+   rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)), url('../images/Fon.jpg') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .section-hero {
   text-align: center;
   background-color:#2F303A;
@@ -263,6 +318,17 @@ margin-bottom: 9px;
   width: 270px;
 }
 
+.about-icon {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  background: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
 /* .......------section-foto-------..... */
 .foto-title {
   font-weight: 700;
@@ -315,7 +381,7 @@ margin-bottom: 9px;
 }
 .team-text {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 .team-list {
   display: flex;
@@ -330,8 +396,74 @@ margin-bottom: 9px;
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 
+  .team-icon-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #AFB1B8;
+  }
+  .team-icon-link:hover,
+  .team-icon-link:focus {
+    color: #FFFFFF;
+    background-color: var(--accent-color-text);
+  }
+
+  .team-icon-item+.team-icon-item {
+    margin-left: 10px;
+  }
+  .team-icon-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .team-icon {
+    fill: currentColor;
+  }
+
+
+  /* .............--------------client------------.......... */
+.client-title {
+    font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  }
+  .client-list {
+    display: flex;
+  }
+  .client-item+.client-item {
+    margin-left: 30px;
+  }
+  .client-link {
+    padding: 16px 32px;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+  }
+  .client-icon-svg {
+  fill: currentColor;
+  }
+  .client-link:hover,
+  .client-link:focus {
+    color: var(--accent-color-text);
+    border-color: #2196F3;
+  }
+  /* .client-link:hover .client-icon-svg,
+  .client-link:focus .client-icon-svg{
+    color: var(--accent-color-text);
+    border-color: var(--accent-color-text);
+  } */
 /* ........-------------portfolio----------.......... */
 
 
@@ -409,4 +541,16 @@ background: #FFFFFF;
 border-bottom: 1px solid #EEEEEE;
 border-left: 1px solid #EEEEEE;
 border-right: 1px solid #EEEEEE;
+}
+.work-link {
+  display: block;
+  color: #212121;
+}
+
+.work-link:hover,
+.work-link:focus {
+
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);
 }

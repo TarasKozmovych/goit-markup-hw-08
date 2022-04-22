@@ -63,7 +63,9 @@
       <section class="section-hero overlay">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button">Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- секція особливостей -->
@@ -128,31 +130,46 @@
           <h2 class="foto-title">Чем мы занимаемся</h2>
           <ul class="foto-list list">
             <li class="foto-item">
-              <img
-                class="foto"
-                src="./images/img1.jpg"
-                alt="разработка дизайна"
-                width="370"
-                height="294"
-              />
+              <div class="foto-item-div">
+                <img
+                  class="foto"
+                  src="./images/img1.jpg"
+                  alt="разработка дизайна"
+                  width="370"
+                  height="294"
+                />
+                <div class="foto-item-text">
+                  <p class="back-text">Десктопные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="foto-item">
-              <img
-                class="foto"
-                src="./images/img2.jpg"
-                alt="разработка дизайна"
-                width="370"
-                height="294"
-              />
+              <div class="foto-item-div">
+                <img
+                  class="foto"
+                  src="./images/img2.jpg"
+                  alt="разработка дизайна"
+                  width="370"
+                  height="294"
+                />
+                <div class="foto-item-text">
+                  <p class="back-text">Мобильные приложения</p>
+                </div>
+              </div>
             </li>
             <li class="foto-item">
-              <img
-                class="foto"
-                src="./images/img3.jpg"
-                alt="разработка дизайна"
-                width="370"
-                height="294"
-              />
+              <div class="foto-item-div">
+                <img
+                  class="foto"
+                  src="./images/img3.jpg"
+                  alt="разработка дизайна"
+                  width="370"
+                  height="294"
+                />
+                <div class="foto-item-text">
+                  <p class="back-text">Дизайнерские решения</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -444,5 +461,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -869,6 +869,7 @@ background-color:inherit;
   letter-spacing: 0.03em;
   text-decoration: underline;  
   color: #2196F3;
+  cursor: pointer;
 }
 
 .form-field-checkbox {

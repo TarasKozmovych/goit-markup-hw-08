@@ -1,0 +1,54 @@
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $text-color;
+}
+
+.about__list {
+    display: flex;
+    justify-content: center;
+
+}
+
+.about__item:nth-child(n + 2) {
+    margin-left: 30px;
+
+}
+
+.about__item {
+    width: 270px;
+}
+
+.about-icon {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}

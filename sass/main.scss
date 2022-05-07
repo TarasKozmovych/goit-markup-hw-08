@@ -1,6 +1,12 @@
-body {
-    background-color: red;
-}
-p {
-    color: tomato;
-}
+@import "./utils/reset";
+@import "./utils/variables";
+@import "./components/header";
+@import "./components/section-hero";
+@import "./components/section-about";
+@import "./components/section-foto";
+@import "./components/section-team";
+@import "./components/section-client";
+@import "./components/footer";
+@import "./components/section-filter";
+@import "./components/section-work";
+@import "./components/modal";

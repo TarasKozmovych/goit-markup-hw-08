@@ -1,0 +1,36 @@
+.filter__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter__item:nth-child(n + 2) {
+    margin-left: 8px;
+}
+
+.filter__btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: #F5F4FA;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 22px;
+    border: none;
+    display: inline-block;
+    transition: color 250ms $function-time,
+        background-color 250ms $function-time,
+        box-shadow 250ms $function-time;
+        &:hover,
+            &:focus {
+                color: #FFFFFF;
+                background: #2196F3;
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                    0px 1px 2px rgba(0, 0, 0, 0.08),
+                    0px 2px 2px rgba(0, 0, 0, 0.12);
+            }
+}
+

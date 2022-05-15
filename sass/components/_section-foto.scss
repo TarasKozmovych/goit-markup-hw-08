@@ -1,4 +1,11 @@
-.section-foto__title {
+.section-foto {
+    display: none;
+}
+@include desktop {
+.section-foto {
+        display: block;
+    }
+    .section-foto__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -6,20 +13,13 @@
     text-align: center;
     margin-bottom: 50px;
 }
-
 .foto-list {
     display: flex;
     justify-content: center;
 }
-
 .foto-list__item:nth-child(n + 2) {
     margin-left: 30px;
 }
-
-// .about {
-//     padding-bottom: 0px;
-// }
-
 .foto-list__back-text {
     font-weight: 700;
     font-size: 14px;
@@ -30,20 +30,17 @@
     text-align: center;
     margin-top: 27px;
 }
-
 .foto-list__text {
     background: rgba(47, 48, 58, 0.8);
 
     min-height: 70px;
     width: 100%;
-
     position: absolute;
     left: 0;
     bottom: 0;
     padding: auto;
-
 }
-
 .foto-list__div {
     position: relative;
+}
 }

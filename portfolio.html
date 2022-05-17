@@ -26,46 +26,48 @@
           ><span class="link__logo">Web</span>Studio</a
         >
         <div class="header-wrap">
-        <nav class="navigation">
-          <ul class="header-list list">
-            <li class="header-list__item">
-              <a href="./index.html" class="header-list__link link">Студия</a>
+          <nav class="navigation">
+            <ul class="header-list list">
+              <li class="header-list__item">
+                <a href="./index.html" class="header-list__link link">Студия</a>
+              </li>
+              <li class="header-list__item">
+                <a
+                  href="./portfolio.html"
+                  class="header-list__link link current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header-list__item">
+                <a href="" class="header-list__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contact list">
+            <li class="contact__item">
+              <a class="contact__info link" href="mailto:info@devstudio.com">
+                <svg class="contact__tell" width="16" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="header-list__item">
-              <a href="./portfolio.html" class="header-list__link link current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="header-list__item">
-              <a href="" class="header-list__link link">Контакты</a>
+            <li class="contact__item">
+              <a class="contact__info link" href="tel:+380961111111"
+                ><svg class="contact__tell" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-
-        <ul class="contact list">
-          <li class="contact__item">
-            <a class="contact__info link" href="mailto:info@devstudio.com">
-              <svg class="contact__tell" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact__item">
-            <a class="contact__info link" href="tel:+380961111111"
-              ><svg class="contact__tell" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
         </div>
       </div>
     </header>
     <main>
       <!-- фільтри -->
-      <!-- <section class="filter section">
+      <section class="filter section">
         <div class="container">
           <h1 class="visually-hidden">Filter</h1>
           <ul class="filter__list list">
@@ -84,21 +86,42 @@
             <li class="filter__item">
               <button type="button" class="filter__btn">Маркетинг</button>
             </li>
-          </ul> -->
+          </ul>
 
-      <!-- виконані роботи -->
-      <!-- <h2 class="visually-hidden">Work performed</h2>
+          <!-- виконані роботи -->
+          <h2 class="visually-hidden">Work performed</h2>
           <ul class="work__list list">
             <li class="work__item">
               <a class="work__link link" href="">
                 <div class="work__cover-text">
-                  <img
-                    class="foto"
-                    src="./images/portfolio1.jpg"
-                    alt="Наши проекты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio1.jpg     1x,
+                        ./images/portfolio-1-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio-1.jpg    1x,
+                        ./images/tablet-portfolio-1-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobil-portfolio-1.jpg    1x,
+                        ./images/mobil-portfolio-1-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="foto"
+                      src="./images/mobil-portfolio-1.jpg"
+                      alt="Наши проекты"
+                    />
+                  </picture>
                   <p class="work__lorem-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -114,13 +137,34 @@
             <li class="work__item">
               <a class="work__link link" href="">
                 <div class="work__cover-text">
-                  <img
-                    class="foto"
-                    src="./images/portfolio2.jpg"
-                    alt="Наши проекты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio2.jpg     1x,
+                        ./images/portfolio-2-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio-2.jpg    1x,
+                        ./images/tablet-portfolio-2-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobil-portfolio-2.jpg    1x,
+                        ./images/mobil-portfolio-2-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="foto"
+                      src="./images/mobil-portfolio-2.jpg"
+                      alt="Наши проекты"
+                    />
+                  </picture>
                   <p class="work__lorem-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -136,13 +180,34 @@
             <li class="work__item">
               <a class="work__link link" href="">
                 <div class="work__cover-text">
-                  <img
-                    class="foto"
-                    src="./images/portfolio3.jpg"
-                    alt="Наши проекты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio3.jpg     1x,
+                        ./images/portfolio-3-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio-3.jpg    1x,
+                        ./images/tablet-portfolio-3-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobil-portfolio-3.jpg    1x,
+                        ./images/mobil-portfolio-3-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="foto"
+                      src="./images/mobil-portfolio-3.jpg"
+                      alt="Наши проекты"
+                    />
+                  </picture>
                   <p class="work__lorem-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -158,13 +223,34 @@
             <li class="work__item">
               <a class="work__link link" href="">
                 <div class="work__cover-text">
-                  <img
-                    class="foto"
-                    src="./images/portfolio4.jpg"
-                    alt="Наши проекты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio4.jpg     1x,
+                        ./images/portfolio-4-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio-4.jpg    1x,
+                        ./images/tablet-portfolio-4-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobil-portfolio-4.jpg    1x,
+                        ./images/mobil-portfolio-4-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="foto"
+                      src="./images/mobil-portfolio-4.jpg"
+                      alt="Наши проекты"
+                    />
+                  </picture>
                   <p class="work__lorem-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -180,13 +266,34 @@
             <li class="work__item">
               <a class="work__link link" href="">
                 <div class="work__cover-text">
-                  <img
-                    class="foto"
-                    src="./images/portfolio5.jpg"
-                    alt="Наши проекты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio5.jpg     1x,
+                        ./images/portfolio-5-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio-5.jpg    1x,
+                        ./images/tablet-portfolio-5-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobil-portfolio-5.jpg    1x,
+                        ./images/mobil-portfolio-5-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="foto"
+                      src="./images/mobil-portfolio-5.jpg"
+                      alt="Наши проекты"
+                    />
+                  </picture>
                   <p class="work__lorem-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -202,13 +309,34 @@
             <li class="work__item">
               <a class="work__link link" href="">
                 <div class="work__cover-text">
-                  <img
-                    class="foto"
-                    src="./images/portfolio6.jpg"
-                    alt="Наши проекты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio6.jpg     1x,
+                        ./images/portfolio-6-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio-6.jpg    1x,
+                        ./images/tablet-portfolio-6-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobil-portfolio-6.jpg    1x,
+                        ./images/mobil-portfolio-6-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="foto"
+                      src="./images/mobil-portfolio-6.jpg"
+                      alt="Наши проекты"
+                    />
+                  </picture>
                   <p class="work__lorem-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -224,13 +352,34 @@
             <li class="work__item">
               <a class="work__link link" href="">
                 <div class="work__cover-text">
-                  <img
-                    class="foto"
-                    src="./images/portfolio7.jpg"
-                    alt="Наши проекты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio7.jpg     1x,
+                        ./images/portfolio-7-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio-7.jpg    1x,
+                        ./images/tablet-portfolio-7-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobil-portfolio-7.jpg    1x,
+                        ./images/mobil-portfolio-7-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="foto"
+                      src="./images/mobil-portfolio-7.jpg"
+                      alt="Наши проекты"
+                    />
+                  </picture>
                   <p class="work__lorem-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -246,13 +395,34 @@
             <li class="work__item">
               <a class="work__link link" href="">
                 <div class="work__cover-text">
-                  <img
-                    class="foto"
-                    src="./images/portfolio8.jpg"
-                    alt="Наши проекты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio8.jpg     1x,
+                        ./images/portfolio-8-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio-8.jpg    1x,
+                        ./images/tablet-portfolio-8-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobil-portfolio-8.jpg    1x,
+                        ./images/mobil-portfolio-8-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="foto"
+                      src="./images/mobil-portfolio-8.jpg"
+                      alt="Наши проекты"
+                    />
+                  </picture>
                   <p class="work__lorem-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -268,13 +438,34 @@
             <li class="work__item">
               <a href="" class="work__link link">
                 <div class="work__cover-text">
-                  <img
-                    class="foto"
-                    src="./images/portfolio9.jpg"
-                    alt="Наши проекты"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio9.jpg     1x,
+                        ./images/portfolio-9-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet-portfolio-9.jpg    1x,
+                        ./images/tablet-portfolio-9-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobil-portfolio-9.jpg    1x,
+                        ./images/mobil-portfolio-9-2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      class="foto"
+                      src="./images/mobil-portfolio-9.jpg"
+                      alt="Наши проекты"
+                    />
+                  </picture>
                   <p class="work__lorem-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -289,65 +480,65 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <footer class="footer">
       <div class="footer__div container">
         <div class="footer__content">
-         <div class="footer__wrap">
-          <a href="./index.html" class="footer__logo link"
-            ><span class="link__logo">Web</span>Studio</a
-          >
-          <address class="footer__address">
-            <p class="footer__text">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="footer__list list">
-              <li class="footer__contact">
-                <a class="footer__info link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+          <div class="footer__wrap">
+            <a href="./index.html" class="footer__logo link"
+              ><span class="link__logo">Web</span>Studio</a
+            >
+            <address class="footer__address">
+              <p class="footer__text">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="footer__list list">
+                <li class="footer__contact">
+                  <a class="footer__info link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer__contact">
+                  <a class="footer__info link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__icon-div">
+            <p class="footer__icon-text">присоединяйтесь</p>
+            <ul class="footer__list-icon list">
+              <li class="footer__icon-item">
+                <a class="footer__icon-link link" href="">
+                  <svg class="footer__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__contact">
-                <a class="footer__info link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li class="footer__icon-item">
+                <a class="footer__icon-link link" href="">
+                  <svg class="footer__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon-item">
+                <a class="footer__icon-link link" href="">
+                  <svg class="footer__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__icon-item">
+                <a class="footer__icon-link link" href="">
+                  <svg class="footer__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer__icon-div">
-          <p class="footer__icon-text">присоединяйтесь</p>
-          <ul class="footer__list-icon list">
-            <li class="footer__icon-item">
-              <a class="footer__icon-link link" href="">
-                <svg class="footer__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon-item">
-              <a class="footer__icon-link link" href="">
-                <svg class="footer__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon-item">
-              <a class="footer__icon-link link" href="">
-                <svg class="footer__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__icon-item">
-              <a class="footer__icon-link link" href="">
-                <svg class="footer__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
         <div class="footer__online">
           <p class="footer__input-text">Подпишитесь на рассылку</p>
           <div class="footer__online-div">

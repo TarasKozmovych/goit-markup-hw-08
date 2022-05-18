@@ -71,7 +71,50 @@ ul {
 }
 
 .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   padding: 48px 40px;
+  background-color: #FFFFFF;
+  z-index: 999;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(100%);
+}
+
+.menu__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  margin-left: auto;
+  padding: 0px;
+}
+
+.menu__icon {
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__close:hover .menu__icon {
+  fill: #2196F3;
+}
+.menu__close:focus .menu__icon {
+  fill: #2196F3;
+}
+
+.menu.is-open {
+  transform: translateX(0);
 }
 
 .menu__link-page {
@@ -80,6 +123,10 @@ ul {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: inherit;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__link-page:hover, .menu__link-page:focus {
+  color: #2196F3;
 }
 
 .menu__item-page {
@@ -115,6 +162,10 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__item-adress:last-child .menu__link-adress:hover, .menu__item-adress:last-child .menu__link-adress:focus {
+  color: #2196F3;
 }
 
 .menu__list-soc {
@@ -158,6 +209,41 @@ header {
 .header-wrap {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 767px) {
+  .header-wrap {
+    display: none;
+  }
+}
+.header__menu-open {
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  margin-left: auto;
+  padding: 0px;
+}
+
+@media (min-width: 768px) {
+  .header__menu-open {
+    display: none;
+  }
+}
+.header__icon-menu {
+  fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__menu-open:hover .header__icon-menu {
+  fill: #2196F3;
+}
+.header__menu-open:focus .header__icon-menu {
+  fill: #2196F3;
 }
 
 .header-list__link {
@@ -478,8 +564,9 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
-  .section-foto {
+  section > .section-foto {
     display: block;
+    padding-bottom: 0px;
   }
 
   .section-foto__title {

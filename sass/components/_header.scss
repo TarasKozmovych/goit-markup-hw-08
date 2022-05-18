@@ -20,6 +20,41 @@ header {
     display: flex;
     align-items: center;
 }
+@media (max-width: 767px) {
+    .header-wrap {
+        display: none;
+    }
+}
+.header__menu-open {
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;    
+    outline: none;
+    background-color: inherit;
+    margin-left: auto;
+    padding: 0px;
+}
+@media (min-width: 768px) {
+    .header__menu-open {
+        display: none;
+    }
+}
+.header__icon-menu {
+    fill: currentColor;
+    transition: fill 250ms $function-time;
+    .header__menu-open:hover & {
+            fill: $accent-color-text;
+        }
+    
+        .header__menu-open:focus & {
+            fill: $accent-color-text;
+        }
+}
+
 
 
 .header-list__link {

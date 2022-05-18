@@ -2,8 +2,9 @@
     display: none;
 }
 @include desktop {
-.section-foto {
+section>.section-foto {
         display: block;
+        padding-bottom: 0px;
     }
     .section-foto__title {
     font-weight: 700;

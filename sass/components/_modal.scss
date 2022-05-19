@@ -26,6 +26,12 @@
     left: 50%;
     transform: scale(1) translate(-50%, -50%);
     transition: transform 250ms $function-time;
+    @media screen and (max-height: 630px) {
+    max-height: 100%;
+    top: 10px;
+    transform: scale(1) translate(-50%, -0);
+    overflow: overlay;
+}
 }
 
 .modal__close {

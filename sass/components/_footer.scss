@@ -92,8 +92,7 @@
 }
 
 .footer__icon-div {
-text-align: center;
-margin-bottom: 60px;
+text-align: center; 
 }
 
 
@@ -161,7 +160,9 @@ text-align: center;
 }
 
 
-
+.footer__content{
+    margin-bottom: 60px;
+}
 .footer__icon-send {
     margin-left: 10px;
 }
@@ -169,14 +170,13 @@ text-align: center;
     .footer__content{
         display: flex;
         align-items: baseline;
-        justify-content: center;
+        justify-content: space-around;
         margin-bottom: 60px;
             }
     .footer__input {
     width: 450px;
     }
     .footer__wrap {
-        margin-right: 165px;
         margin-bottom: 0px;
     }
     .footer__icon-div {       

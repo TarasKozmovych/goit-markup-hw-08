@@ -677,6 +677,9 @@ header {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   margin-bottom: 30px;
 }
+.team__item:last-child {
+  margin-bottom: 0px;
+}
 
 .team__icon-link {
   width: 44px;
@@ -900,7 +903,6 @@ header {
 
 .footer__icon-div {
   text-align: center;
-  margin-bottom: 60px;
 }
 
 .footer__online {
@@ -964,6 +966,10 @@ header {
   background: #188CE8;
 }
 
+.footer__content {
+  margin-bottom: 60px;
+}
+
 .footer__icon-send {
   margin-left: 10px;
 }
@@ -972,7 +978,7 @@ header {
   .footer__content {
     display: flex;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 60px;
   }
 
@@ -981,7 +987,6 @@ header {
   }
 
   .footer__wrap {
-    margin-right: 165px;
     margin-bottom: 0px;
   }
 

@@ -42,6 +42,9 @@
     height: 30px;
     cursor: pointer;
     background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     box-sizing: border-box;
@@ -57,7 +60,7 @@
 
 
 .modal__icon {
-    align-items: center;
+    // align-items: center;
     fill: currentColor;
     transition: fill 250ms $function-time;
     .modal__close:hover & {
